@@ -1,3 +1,96 @@
-.h1Teste{
-    color: darkblue;
+body{
+    margin: 0px;
 }
+
+.divAuxiliar{
+    width: 5%;
+}
+
+.divBlackHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.signUpP{
+    color: #ffffff;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 18.9px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-align: center; 
+    width: 90%;
+}
+
+.signUpSpan{
+    color: #ffffff;
+    margin-inline-start: 3px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.xP{
+    color: white;
+    width: 5%;
+}
+
+.mainHeader{
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.contentDiv{
+    display: flex;
+    background-color: green;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    height: 50%;
+}
+
+.h1Div {
+    width: 10%;
+    height: 100%;
+    background-color: purple;   
+}
+
+.navDiv{
+    width: 30%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.searchDiv{
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+}
+
+.userIcon{
+    width: 10%;
+    height: 100%;
+    background-color: orange;
+}
+
+

@@ -63,6 +63,7 @@ body{
 .xP{
     color: white;
     width: 5%;
+    cursor: pointer;
 }
 
 .mainHeader{
@@ -211,6 +212,131 @@ body{
     background-image: url(images/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.mainText{
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 64px;
+    leading-trim: Cap height;
+    line-height: 64px;
+    letter-spacing: 0%;
+}
+
+.text p {
+    margin: 0px;
+}
+
+.smallText{
+    padding-block-start: 50px;
+    padding-block-end: 50px;
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+    leading-trim: Cap height;
+    line-height: 22px;
+    letter-spacing: 0%;
+
+}
+
+.shopNowButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    height: 6vh;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: Satoshi;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.9;
+    }
+}
+
+.numbersAndWords{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-block-start: 70px;
+    width: 40%;
+}
+
+.miniText1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 0%;
+    border-right: solid 1px #0000001A;
+}
+
+.miniText1 span{
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+}
+
+.miniText2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 0%;
+    border-right: solid 1px #0000001A;
+}
+
+.miniText2 span{
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+}
+
+.miniText3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    letter-spacing: 0%;
+}
+
+.miniText3 span{
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline-start: 82px;
+    padding-block-start: 120px;
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 64px;
 }
 
 .marcas{

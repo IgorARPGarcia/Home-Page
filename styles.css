@@ -16,13 +16,14 @@ body{
     font-style: normal;
 }
 
-.divAuxiliar{
+.divAux{
     width: 5%;
 }
 
 .divBlackHeader{
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    text-align: center;
     align-items: center;
     height: 38px;
     width: 100%;
@@ -64,6 +65,13 @@ body{
     color: white;
     width: 5%;
     cursor: pointer;
+    position: absolute;
+    right: 145px;
+    background-color: black;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border: none;
 }
 
 .mainHeader{
@@ -88,7 +96,7 @@ body{
     align-items: center;
     width: 10%;
     height: 100%; 
-    margin-top: -5px;
+    margin-top: -6px;
 }
 
 .mainTitle{
@@ -168,14 +176,17 @@ body{
 
 .Icons{
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     gap: 14px;
     width: 15%;
     height: 100%;
 }
 
-.carrinhoIcon{
+.cartIcon{
+    position: absolute;
+    right: 115px;
     width: 24px;
     height: 24px;
 
@@ -185,6 +196,8 @@ body{
 }
 
 .userIcon{
+    position: absolute;
+    right: 70px;
     width: 24px;
     height: 24px;
 
@@ -202,16 +215,29 @@ body{
     line-height: 21.6px;
     text-align: left;
     text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;  
 }
 
 .mainBackground{
     width: 100%;
     height: 100vh;
     background-position: -200px;
-    background-image: url(images/fundo.png);
+    position: relative;
+    background-image: url(images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.smallStarConfig{
+    position: absolute;
+    right: 900px;
+    top: 400px;
+}
+
+.bigStarConfig{
+    position: absolute;
+    top: 140px;
+    right: 130px;
 }
 
 .mainText{
@@ -339,7 +365,7 @@ body{
     font-size: 64px;
 }
 
-.marcas{
+.brands{
     display: flex;
     width: 100%;
     height: 120px;
@@ -349,3 +375,124 @@ body{
     background-color: #000000;
 }
 
+.newArrivalsSec{
+    display: flex;
+    justify-content: center;
+}
+
+.newArrTitle{
+    padding-block-start: 30px;
+    padding-block-end: 20px;
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.someProducts{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.productTextConfig{
+    display: flex;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+.currentPrice{
+    display: flex;
+    align-items: center;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    letter-spacing: 0%;
+}
+
+.price{
+    margin-inline-start: 13px;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    letter-spacing: 0%;
+    text-decoration: line-through;
+    color:#00000066;
+}
+
+.discount {
+    font-family: Satoshi;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16.2px;
+    letter-spacing: 0%;
+    margin-inline-start: 13px;
+    background-color: #FF33331A;
+    color: #FF3333;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 30px;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.viewAllButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 6vh;
+    border: none;
+    font-family: Satoshi;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    border: 1px solid #0000001A;
+    background-color: #ffffff;
+    margin-block-start: 30px;
+    margin-block-end: 70px;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #0000001A;
+    }
+}
+
+.FProductsSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+}
+
+.fixLine{
+    width: 67%;
+    height: 0.1vh;
+    background-color: #0000001A;
+    margin-block-end: 70px;
+}
+
+.aConfig{
+    color: inherit;
+    text-decoration: none;
+}
+
+.productImgConfig{
+    cursor: pointer;
+}

@@ -11,9 +11,9 @@
 <body>
     <header>
         <div class="divBlackHeader">
-            <p class="divAuxiliar"></p>
+            <p class="divAux"></p>
             <p class="signUpP">Sign up and get 20% off to your first order.<span class="signUpSpan">Sign Up Now</span></p>
-            <p class="xP">✖</p>
+            <button class="xP">✖</button>
         </div>
         <div class="mainHeader">
             <div class="contentDiv">
@@ -25,60 +25,103 @@
                     <nav class="geralNavs" id="onSaleNav">
                         On Sale
                     </nav>
-                    <nav class="geralNavs" id="newArrNav">
-                        New Arrivals
+                    <nav class="geralNavs">
+                        <a class="aConfig" href="#newArrivals">New Arrivals</a>
                     </nav>
-                    <nav class="geralNavs" id="brandsNav">
-                        Brands
+                    <nav class="geralNavs">
+                        <a class="aConfig" href="#brandsSec">Brands</a>
                     </nav>
                 </div>
                 <div class="searchDiv">
                     <div class="searchSpace">
-                        <img src="images/lupa.png"> 
+                        <img src="images/searchIcon.png"> 
                         <input class="searchContent" placeholder="Search for products..."></input>
                     </div>
                 </div>
                 <div class="Icons">
-                    <div class="carrinhoIcon">
-                        <img src="images/carrinho.png">
+                    <div class="cartIcon">
+                        <img src="images/cart.png">
                     </div>
                     <div class="userIcon">
-                        <img src="images/usuario.png">
+                        <img src="images/user.png">
                     </div>    
                 </div>
             </div>
         </div>
     </header>
-    <div class="mainBackground">
-        <div class="text">
-            <p class="mainText">FIND CLOTHES <br> THAT MATCHES <br> YOUR STYLE</p>
-            <p class="smallText">Browse through our diverse range of meticulously crafted garments, designed <br> to bring out your individuality and cater to your sense of style.</p>
-            <button class="shopNowButton">Shop Now</button>
-            <div class="numbersAndWords">
-                <div class="miniText1">200+ <br> <span>International Brands</span></div>
-                <div class="miniText2">2000+ <br> <span>High-Quality Products</span></div>
-                <div class="miniText3" class="border">30000+ <br> <span>Happy Customers</span></div>
+    <main>
+        <section>
+            <div class="mainBackground">
+                <div class="text">
+                    <p class="mainText">FIND CLOTHES <br> THAT MATCHES <br> YOUR STYLE</p>
+                    <p class="smallText">Browse through our diverse range of meticulously crafted garments, designed <br> to bring out your individuality and cater to your sense of style.</p>
+                    <button class="shopNowButton">Shop Now</button>
+                    <div class="numbersAndWords">
+                        <div class="miniText1">200+ <br> <span>International Brands</span></div>
+                        <div class="miniText2">2000+ <br> <span>High-Quality Products</span></div>
+                        <div class="miniText3">30000+ <br> <span>Happy Customers</span></div>
+                    </div>
+                </div>
+                <img class="smallStarConfig" src="images/smallStar.png" alt="">
+                <img class="bigStarConfig" src="images/BigStar.png" alt="">
             </div>
-        </div>
-        <div class="image"></div>
-    </div>
-    <div class="marcas">
-        <div class="versace">
-            <img src="images/versace-logo-1 1.png" alt="">
-        </div>
-        <div class="zara">
-            <img src="images/zara-logo-1 1.png" alt="">
-        </div>
-        <div class="gucci">
-            <img src="images/gucci-logo-1 1.png" alt="">
-        </div>
-        <div class="prada">
-            <img src="images/prada-logo-1 1.png" alt="">
-        </div>
-        <div class="calvinKlein">
-            <img src="images/Calvin-Klein-logo-1 1.png" alt="">
-        </div>
-    </div>
+            <div class="brands" id="brandsSec">
+                <div class="versace">
+                    <img class="productImgConfig" src="images/versace-logo-1 1.png" alt="">
+                </div>
+                <div class="zara">
+                    <img class="productImgConfig" src="images/zara-logo-1 1.png" alt="">
+                </div>
+                <div class="gucci">
+                    <img class="productImgConfig" src="images/gucci-logo-1 1.png" alt="">
+                </div>
+                <div class="prada">
+                    <img class="productImgConfig" src="images/prada-logo-1 1.png" alt="">
+                </div>
+                <div class="calvinKlein">
+                    <img class="productImgConfig" src="images/Calvin-Klein-logo-1 1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="FProductsSec">
+            <div class="newArrivalsSec" id="newArrivals">
+                <p class="newArrTitle">NEW ARRIVALS</p>
+            </div>
+            <div class="someProducts">
+                <div class="firstP">
+                    <img class="productImgConfig" src="images/T-shirt.png" alt="">
+                    <p class="productTextConfig">T-SHIRT WITH TAPE DETAILS</p>
+                    <img src="images/T-shirtStars.png" alt="">
+                    <p class="currentPrice">$120</p>
+                </div>
+                <div class="secondP">
+                    <img class="productImgConfig" src="images/Jeans.png" alt="">
+                    <p class="productTextConfig">SKINNY FIT JEANS</p>
+                    <img src="images/JeansStars.png" alt="">
+                    <p class="currentPrice">$240<span class="price">$260</span><span class="discount">20%</span></p>
+                </div>
+                <div class="thirdP">
+                    <img class="productImgConfig" src="images/C-Shirt.png" alt="">
+                    <p class="productTextConfig">CHECKERED SHIRT</p>
+                    <img src="images/C-shirtStars.png" alt="">
+                    <p class="currentPrice">$180</p>
+                </div>
+                <div class="fourthP">
+                    <img class="productImgConfig" src="images/StrT-shirt.png" alt="">
+                    <p class="productTextConfig">SLEEVE STRIPED T-SHIRT</p>
+                    <img src="images/StrT-shirtStars.png" alt="">
+                    <p class="currentPrice">$130<span class="price">$160</span><span class="discount">30%</span></p>
+                </div>
+            </div>
+            <div class="buttonDiv">
+                <button class="viewAllButton">View All</button>
+            </div>
+            <div class="line">
+                <div class="fixLine"></div>
+            </div>
+        </section>
+    </main>    
+    <footer></footer>
 </body>
 </html>
 

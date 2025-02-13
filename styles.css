@@ -496,3 +496,182 @@ body{
 .productImgConfig{
     cursor: pointer;
 }
+
+.stylesSec {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+    margin-bottom: 80px;
+}
+
+.styles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 67%;
+    height: 100%;
+    background-color: #F0F0F0;
+    border-radius: 30px;
+}
+
+.stylesImages1{
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    height: 35%;
+}
+
+.stylesImages2{
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    height: 35%;
+}
+
+.stylesTitle{
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 0%;
+    margin-bottom: 60px;
+    margin-top: -30px;
+}
+
+.casualStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/casual.png);
+    background-size: cover;
+    border-radius: 30px;
+    width: 40%;
+    height: 100%;
+}
+
+.formalStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/formal.png);
+    background-size: cover;
+    border-radius: 30px;
+    width: 60%;
+    height: 100%;
+}
+
+.partyStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/party.png);
+    background-size: cover;
+    border-radius: 30px;
+    width: 60%;
+    height: 100%;
+}
+
+.gymStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/gym.png);
+    background-size: cover;
+    border-radius: 30px;
+    width: 40%;
+    height: 100%;
+}
+
+.headerReviewsSec{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 67%;
+}
+
+.rvTitleConfig{
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 0%;
+}
+
+.leftArrow{
+    background-color: #ffffff;
+    border: none;
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+
+.rightArrow{
+    background-color: #ffffff;
+    border: none;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.allReviewBlocks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    height: 400px;
+}
+
+.leftReview{
+    display: flex;
+    border: 1px solid #0000001A;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 80%;
+    width: 20%;
+}
+
+.sarahReview{
+    display: flex;
+    border: 1px solid #0000001A;
+    border-radius: 30px;
+    height: 80%;
+    width: 100%;
+}
+
+.alexReview{
+    display: flex;
+    border: 1px solid #0000001A;
+    border-radius: 30px;
+    height: 80%;
+    width: 100%;
+}
+
+.jamesReview{
+    display: flex;
+    border: 1px solid #0000001A;
+    border-radius: 30px;
+    height: 80%;
+    width: 100%;
+}
+
+.rightReview{
+    display: flex;
+    border: 1px solid #0000001A;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 80%;
+    width: 20%;
+}
+
+

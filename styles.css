@@ -673,92 +673,76 @@ body{
     letter-spacing: 0%;
 }
 
-.footerBackground{
+.footerAllDiv{
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 15vh;
-}
-
-.footerBase{
-    display: flex;
-    justify-content: center;
-    height: 85vh;
-    width: 100%;
-    background-color: #F0F0F0;
-}
-
-.blackBoxPart1{
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    background-color: #000000;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 80%;
-    height: 85%;
-}
-
-.blackBoxPart2{
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    background-color: #000000;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    width: 80%;
-    height: 15%;
-}
-
-.wordsPart1{
-    margin-left: 90px;
-    color: white;
-    font-family: Integral CF;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 45px;
-    letter-spacing: 0%;
-}
-
-.wordsPart2{
-    margin-left: 90px;
-    margin-top: 10px;
-    color: white;
-    font-family: Integral CF;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 45px;
-    letter-spacing: 0%;
+    height: 800px;
+    background: linear-gradient(to top, #F0F0F0 80%, white 15%);
 }
 
 .emailBox{
-    display: flex;
-    align-items: center;
-    margin-right: 90px;
+    display: inline;
     border-radius: 30px;
-    width: 25%;
-    height: 40%;
-    background-color: white;
+    align-items: center;
+    background-color: #000000;
+    width: 80%;
+    height: 25%;
 }
 
-.emailBox img {
-    margin-left: 10px;
+.emailInput{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
 }
 
 .emailButton{
-    margin-right: 90px;
-    margin-top: 10px;
-    width: 25%;
-    height: 40%;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+}
+
+.textConfig1{
+    margin-top: 70px;
+    margin-left: 100px;
+    color: white;
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 0%;
+}
+
+.textConfig2{
+    margin-bottom: 80px;
+    margin-left: 100px;
+    color: white;
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    letter-spacing: 0%;
+}
+
+.buttonConfig{
+    margin-right: 100px;
+    margin-bottom: 30px;
+    width: 30%;
+    height: 50%;
+    border: none;
+    border-radius: 30px;
+    color: #000000;
     font-family: Satoshi;
     font-weight: 500;
     font-size: 16px;
     line-height: 21.6px;
     letter-spacing: 0%;
-    border: none;
-    border-radius: 30px;
     cursor: pointer;
 
     &:hover{
@@ -766,11 +750,14 @@ body{
     }
 }
 
-.emailContent{
-    margin-left: 10px;
-    outline: none;
+.inputConfig{
+    margin-top: 40px;
+    margin-right: 100px;
+    border-radius: 30px;
     border: none;
-    width: 60%;
+    outline: none;
+    width: 30%;
+    height: 50%;
     font-family: Satoshi;
     font-weight: 400;
     font-size: 16px;
@@ -778,6 +765,184 @@ body{
     letter-spacing: 0%;
 }
 
+.emailInput img{
+    margin-left: 960px;
+    margin-top: 40px;
+    position: absolute;
+}
 
+.inputConfig {
+    margin-top: 40px;
+    margin-right: 100px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: calc(30% - 50px);
+    height: 50%;
+    padding-left: 50px;
+}
 
+.footerContainer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+}
 
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.logo{
+    font-family: Integral CF;
+    font-weight: 700;
+    font-size: 33.45px;
+    leading-trim: Cap height;
+    line-height: 40.15px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+
+.description{
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+.h3Config{
+    color: #000000;
+    font-family: Satoshi;
+    font-weight: 1000;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 3px;
+}
+
+.ulConfig{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+}
+
+.footerBottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 1px solid #0000001A;
+    height: 10%;
+    width: 80%;
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.9px;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.paymentIcons{
+    margin-top: 10px;
+}
+
+.payIconImg{
+    cursor: pointer;
+}
+
+.socialIcons{
+    cursor: pointer;
+}
+
+<div class="footerAllDiv">
+            <div class="emailBox">
+                <div class="emailInput">
+                    <p class="textConfig1">STAY UPTO DATE ABOUT</p>
+                    <img src="images/emailIcon.png" alt="">
+                    <input type="email" name="email" class="inputConfig" placeholder="Enter your email address">
+                </div>
+                <div class="emailButton">
+                    <p class="textConfig2">OUR LATEST OFFERS</p>
+                    <button class="buttonConfig">Subscribe to Newsletter</button>
+                </div>
+            </div>
+                <div class="footerContainer">
+                    <div class="footerSection">
+                        <h2 class="logo">SHOP.CO</h2>
+                        <p class="description">We have clothes that suits your style and<br> which you're proud to wear. From <br> women to men.</p>
+                        <div class="social-icons">
+                            <img class="socialIcons" src="images/twitterIcon.png" alt="">
+                            <img class="socialIcons" src="images/facebookIcon.png" alt="">
+                            <img class="socialIcons" src="images/instagramIcon.png" alt="">
+                            <img class="socialIcons" src="images/gitHubIcon.png" alt="">
+                        </div>
+                    </div>
+            
+                    <div class="footerSection">
+                        <h3 class="h3Config">COMPANY</h3>
+                        <ul class="ulConfig">
+                            <li>About</li>
+                            <li>Features</li>
+                            <li>Works</li>
+                            <li>Career</li>
+                        </ul>
+                    </div>
+            
+                    <div class="footerSection">
+                        <h3 class="h3Config">HELP</h3>
+                        <ul class="ulConfig">
+                            <li>Customer Support</li>
+                            <li>Delivery Details</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+            
+                    <div class="footerSection">
+                        <h3 class="h3Config">FAQ</h3>
+                        <ul class="ulConfig">
+                            <li>Account</li>
+                            <li>Manage Deliveries</li>
+                            <li>Orders</li>
+                            <li>Payments</li>
+                        </ul>
+                    </div>
+            
+                    <div class="footerSection">
+                        <h3 class="h3Config">RESOURCES</h3>
+                        <ul class="ulConfig">
+                            <li>Free eBooks</li>
+                            <li>Development Tutorial</li>
+                            <li>How to - Blog</li>
+                            <li>Youtube Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footerBottom">
+                    <p>Shop.co © 2000-2023, All Rights Reserved</p>
+                    <div class="paymentIcons">
+                        <img class="payIconImg" src="images/Visa.png" alt="Visa">
+                        <img class="payIconImg" src="images/MasterCard.png" alt="Mastercard">
+                        <img class="payIconImg" src="images/Paypal.png" alt="PayPal">
+                        <img class="payIconImg" src="images/Apple.png" alt="Apple Pay">
+                        <img class="payIconImg" src="images/Google.png" alt="Google Pay">
+                    </div>
+                </div>
+        </div>
+    </footer>

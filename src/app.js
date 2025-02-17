@@ -1,49 +1,3 @@
-// Definindo a classe para cada review
-var Review = /** @class */ (function () {
-    function Review() {
-    }
-    // Função para setar as classes de ativo, anterior e próxima
-    Review.setActiveReview = function (index) {
-        Review.reviews.forEach(function (review, i) {
-            review.classList.remove('active', 'prev', 'next');
-            if (i === index) {
-                review.classList.add('active');
-            }
-            else if (i === (index - 1 + Review.totalReviews) % Review.totalReviews) {
-                review.classList.add('prev');
-            }
-            else if (i === (index + 1) % Review.totalReviews) {
-                review.classList.add('next');
-            }
-        });
-    };
-    // Inicializa as setas
-    Review.setupArrows = function () {
-        var leftArrow = document.querySelector('.leftArrow');
-        var rightArrow = document.querySelector('.rightArrow');
-        leftArrow.addEventListener('click', function () {
-            Review.currentIndex = (Review.currentIndex - 1 + Review.totalReviews) % Review.totalReviews;
-            Review.setActiveReview(Review.currentIndex);
-        });
-        rightArrow.addEventListener('click', function () {
-            Review.currentIndex = (Review.currentIndex + 1) % Review.totalReviews;
-            Review.setActiveReview(Review.currentIndex);
-        });
-    };
-    // Função de inicialização
-    Review.initialize = function () {
-        Review.setActiveReview(Review.currentIndex);
-        Review.setupArrows();
-    };
-    Review.currentIndex = 0;
-    Review.reviews = document.querySelectorAll('.boxReview');
-    Review.totalReviews = Review.reviews.length;
-    return Review;
-}());
-// Inicializando a funcionalidade
-document.addEventListener('DOMContentLoaded', function () {
-    Review.initialize();
-});
 var emailInput = document.querySelector(".inputConfig");
 var subscribeButton = document.querySelector(".buttonConfig");
 var emailData = [];
@@ -63,3 +17,45 @@ subscribeButton.addEventListener("click", function () {
         alert("Por favor, insira um email válido! ❌");
     }
 });
+var reviews = [
+    {
+        name: "John Yu.",
+        reviewText: "I'm amazed by the quality and style of the clothes I received from Shop.co. The attention to detail and high-quality materials really make a difference. I’m definitely a loyal customer now!",
+    },
+    {
+        name: "Sarah M.",
+        reviewText: "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+    },
+    {
+        name: "Alex K.",
+        reviewText: "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
+    },
+    {
+        name: "James L.",
+        reviewText: "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+    },
+    {
+        name: "Agatha P.",
+        reviewText: "Absolutely love the clothes I got from Shop.co! The quality is fantastic, and the pieces fit my style perfectly. I’ll definitely be coming back for more!",
+    },
+];
+// Get necessary elements
+var reviewsCarousel = document.getElementById('reviewsCarousel');
+var leftArrow = document.querySelector('.leftArrow');
+var rightArrow = document.querySelector('.rightArrow');
+// Function to rotate reviews
+function rotateReviews(direction) {
+    if (direction === 'left') {
+        // Shift reviews to the left
+        var firstReview = reviewsCarousel.firstElementChild;
+        reviewsCarousel.appendChild(firstReview);
+    }
+    else {
+        // Shift reviews to the right
+        var lastReview = reviewsCarousel.lastElementChild;
+        reviewsCarousel.insertBefore(lastReview, reviewsCarousel.firstElementChild);
+    }
+}
+// Add event listeners to arrows
+leftArrow.addEventListener('click', function () { return rotateReviews('left'); });
+rightArrow.addEventListener('click', function () { return rotateReviews('right'); });

@@ -49,24 +49,19 @@ interface ReviewData {
     },
   ];
   
-  // Get necessary elements
   const reviewsCarousel = document.getElementById('reviewsCarousel') as HTMLElement;
   const leftArrow = document.querySelector('.leftArrow') as HTMLButtonElement;
   const rightArrow = document.querySelector('.rightArrow') as HTMLButtonElement;
   
-  // Function to rotate reviews
   function rotateReviews(direction: 'left' | 'right') {
     if (direction === 'left') {
-      // Shift reviews to the left
       const firstReview = reviewsCarousel.firstElementChild!;
       reviewsCarousel.appendChild(firstReview);
     } else {
-      // Shift reviews to the right
       const lastReview = reviewsCarousel.lastElementChild!;
       reviewsCarousel.insertBefore(lastReview, reviewsCarousel.firstElementChild);
     }
   }
   
-  // Add event listeners to arrows
   leftArrow.addEventListener('click', () => rotateReviews('left'));
   rightArrow.addEventListener('click', () => rotateReviews('right'));

@@ -39,23 +39,20 @@ var reviews = [
         reviewText: "Absolutely love the clothes I got from Shop.co! The quality is fantastic, and the pieces fit my style perfectly. I’ll definitely be coming back for more!",
     },
 ];
-// Get necessary elements
+
 var reviewsCarousel = document.getElementById('reviewsCarousel');
 var leftArrow = document.querySelector('.leftArrow');
 var rightArrow = document.querySelector('.rightArrow');
-// Function to rotate reviews
+
 function rotateReviews(direction) {
     if (direction === 'left') {
-        // Shift reviews to the left
         var firstReview = reviewsCarousel.firstElementChild;
         reviewsCarousel.appendChild(firstReview);
     }
     else {
-        // Shift reviews to the right
         var lastReview = reviewsCarousel.lastElementChild;
         reviewsCarousel.insertBefore(lastReview, reviewsCarousel.firstElementChild);
     }
 }
-// Add event listeners to arrows
 leftArrow.addEventListener('click', function () { return rotateReviews('left'); });
 rightArrow.addEventListener('click', function () { return rotateReviews('right'); });

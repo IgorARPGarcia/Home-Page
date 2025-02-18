@@ -888,3 +888,290 @@ ul {
 .socialIcons{
     cursor: pointer;
 }
+
+.menuHamburger{
+    display: none;
+}
+
+.searchIcon{
+    display: none;
+}
+
+.lineMobile{
+    display: none;        
+}
+
+
+@media(max-width: 412px){
+    .divBlackHeader{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .signUpP{
+        width: 80%;
+        font-family: Satoshi;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16.2px;
+        letter-spacing: 0%;
+    }
+
+    .signUpP span{
+        font-family: Satoshi;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16.2px;
+        letter-spacing: 0%;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-offset: Auto;
+        text-decoration-thickness: Auto;
+    }
+
+    .xP{
+        visibility: hidden;
+    }
+
+    .mainHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .mainTitle{
+        font-family: Integral CF;
+        font-weight: 700;
+        font-size: 25.2px;
+        leading-trim: Cap height;
+        line-height: 30.24px;
+        letter-spacing: 0%;
+        position: absolute;
+        top: 5px;
+        left: 60px;
+    }
+
+    .navDiv{
+        display: none;
+    }
+
+    .searchDiv{
+        display: none;
+    }
+
+    .searchIcon{
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 11px;
+    }
+
+    .menuHamburger{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .cartIcon{
+        left: 17px;
+        top: 11px;
+    }
+
+    .userIcon{
+        left: 50px;
+        top: 11px;
+    }
+
+    .searchSpace img{
+        display: flex;
+    }
+
+    .contentDiv{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mainBackground{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: #F2F0F1;
+        background-image: url(images/backgroundMobile.png);
+        background-size: 100%;
+        background-position: 0px 440px;
+    }
+
+    .mainText{
+        font-family: Integral CF;
+        font-weight: 700;
+        font-size: 36px;
+        leading-trim: Cap height;
+        line-height: 34px;
+        letter-spacing: 0%;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .smallText{
+        font-family: Satoshi;
+        font-weight: 400;
+        font-size: 14px;
+        leading-trim: Cap height;
+        line-height: 20px;
+        letter-spacing: 0%;
+        position: absolute;
+        top: 100px;
+        left: 20px;
+    }
+
+    .smallTextBr{
+        display: none;
+    }
+
+    .shopNowButton{
+        position: absolute;
+        top: 240px;
+        width: 95%;
+        left: 10px;
+        font-family: Satoshi;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+    }
+
+    .numbersAndWords{
+        display: flex;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .miniText1{
+        position: absolute;
+        right: 185px;
+        bottom: 180px;
+        font-family: Satoshi;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32.4px;
+        letter-spacing: 0%;
+        border: none;
+    }
+
+    .miniText1 span{
+        font-family: Satoshi;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .miniText2{
+        display: flex;
+        position: absolute;
+        right: 7px;
+        bottom: 180px;
+        font-family: Satoshi;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32.4px;
+        letter-spacing: 0%;
+        border: none;
+    }
+
+    .miniText2 span{
+        font-family: Satoshi;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .miniText3{
+        position: absolute;
+        bottom: 90px;
+        right: 85px;
+        font-family: Satoshi;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32.4px;
+        letter-spacing: 0%;
+    }
+
+    .miniText3 span{
+        font-family: Satoshi;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .lineMobile{
+        position: absolute;
+        right: 40px;
+        bottom: 175px;
+        display: flex;
+        height: 60px;
+        border: 1px solid #0000001A;
+    }
+
+    .bigStarConfig{
+        position: absolute;
+        top: 490px;
+        right: 20px;
+        width: 76px;
+        height: 76px;
+    }
+
+    .smallStarConfig{
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        top: 590px;
+        right: 340px;
+    }
+
+    .brands{
+        position: absolute;
+        top: 1051px;
+        display: flex;
+        height: 200px;
+    }
+
+    .versace img{
+        position: absolute;
+        width: 120px;
+        left: 20px;
+        top: 50px;
+    }
+
+    .zara img{
+        position: absolute;
+        width: 60px;
+        left: 180px;
+        top: 50px;
+    }
+
+    .prada img{
+        position: absolute;
+        width: 130px;
+        left: 50px;
+        top: 120px;
+    }
+
+    .gucci img{
+        position: absolute;
+        width: 120px;
+        top: 50px;
+        left: 270px;
+    }
+
+    .calvinKlein img{
+        position: absolute;
+        width: 160px;
+        top: 118px;
+        left: 220px;
+    }
+}

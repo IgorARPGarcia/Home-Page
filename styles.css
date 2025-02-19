@@ -901,8 +901,24 @@ ul {
     display: none;        
 }
 
+.stylesMobile{
+    display: none;
+}
+
+.stylesBr{
+    display: none;
+}
+
+.reviewMobile{
+    display: none;
+}
+
+.emailTextBr{
+    display: none;
+}
 
 @media(max-width: 412px){
+
     .divBlackHeader{
         display: flex;
         justify-content: center;
@@ -1170,8 +1186,469 @@ ul {
 
     .calvinKlein img{
         position: absolute;
-        width: 160px;
+        width: 155px;
         top: 118px;
         left: 220px;
     }
+
+    .FProductsSec{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 1500px;
+    }
+
+    .someProducts{
+        position: absolute;
+        width: 412px;
+    }
+
+    .firstP{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 10px;
+        top: -80px;
+        margin: 0;
+    }
+
+    .firstP > img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 170px;
+        height: auto;
+    }
+
+    .firstP > p{
+        display: flex;
+        width: 170px;
+        font-family: Satoshi;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+    }
+
+    .discount{
+        font-family: Satoshi;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+    }
+
+    .secondP{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: -80px;
+        left: 230px;
+    }
+
+    .secondP > img{
+        padding: 0;
+        margin: 0;
+        width: 170px;
+    }
+
+    .productImgConfig{
+        height: auto;
+    }
+
+    .starsConfig{
+        margin-bottom: 120px;
+    }
+
+    .secondP > p{
+        width: 170px;
+        font-family: Satoshi;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+    }
+
+    .price{
+        width: 190px;
+        font-family: Satoshi;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+    }
+
+    .thirdP{
+        display: none;
+    }
+
+    .fourthP{
+        display: none;
+    }
+    
+    .stylesSec{
+        position: absolute;
+        top: 3000px;
+    }
+
+    .review{
+        position: absolute;
+        top: 6000px;
+    }
+
+    .footerAllDiv{
+        position: absolute;
+        top: 3950px;
+        height: 2000px;
+        background-color: #9c9c9c;
+    }
+
+    .topSellingSec{
+        display: flex;
+    }
+
+    .newArrTitle{
+        position: absolute;
+        display: inline;
+        left: 80px;
+        top: -250px;
+        font-family: Integral CF;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.4px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .buttonDiv{
+        position: absolute;
+        width: 100%;
+        top: 220px;
+    }
+
+    .viewAllButton{
+        width: 95%;
+    }
+
+    .line{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 90%;
+    }
+
+    .fixLine{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        top: 340px;
+        left: 20px;
+    }
+
+    .SProductsSec{
+        display: flex;
+        position: relative;
+    }
+
+    .topSellingSec{
+        white-space: nowrap;
+        position: absolute;
+        top: 1050px;
+        left: 20px;
+    }
+
+    #someProducts2{
+        position: absolute;
+        width: 412px;
+        top: 1050px;
+    }
+
+    #viewAllButton2{
+        position: absolute;
+        top: 1060px;
+    }
+
+    .styleSec{
+        height: 600px;
+        position: relative;
+    }
+
+    .stylesTitle{
+        position: absolute;
+        top: 90px;
+        left: 70px;
+        font-family: Integral CF;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .styles{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 1000px;
+        top: -500px;
+    }
+
+    .stylesImages1{
+        display: none;
+    }
+
+    .stylesImages2{
+        display: none;
+    }
+
+    .stylesMobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        position: absolute;
+        width: 90%;
+        height: 80%;
+        top: 170px;
+    }
+
+    .stylesBr{
+        display: block;
+    }
+
+    .casualStyleMobile{
+        display: flex;
+        background-image: url(images/casualMobile.png);
+        background-size: cover;
+        border-radius: 30px;
+        width: 100%;
+        height: 25%;
+    }
+    
+
+    .formalStyleMobile{
+        display: flex;
+        background-image: url(images/formalMobile.png);
+        background-size: cover;
+        border-radius: 30px;
+        width: 100%;
+        height: 25%;
+    }
+
+    .partyStyleMobile{
+        display: flex;
+        background-image: url(images/partyMobile.png);
+        background-size: cover;
+        border-radius: 30px;
+        width: 100%;
+        height: 25%;
+    }
+
+    .gymStyleMobile{
+        display: flex;
+        background-image: url(images/gymMobile.png);
+        background-size: cover;
+        border-radius: 30px;
+        width: 100%;
+        height: 25%;
+    }
+
+    .headerReviewsSec{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 3490px;
+    }
+
+    .rvTitleConfig{
+        font-family: Integral CF;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 0%;
+    }
+
+    .content{
+        position: relative;
+    }
+
+    .reviewsTitle{
+        position: absolute;
+        top: 10px;
+        left: 20px; 
+    }
+
+    .arrows{
+        position: absolute;
+        top: 88px;
+        left: 390px;
+    }
+
+    .allReviews{
+        display: flex;
+        justify-content: center;
+        left: 10px;
+        top: -2330px;
+    }
+
+    .boxReview {
+        display: none;
+        max-width: 390px;
+    }
+
+    .boxReview:nth-child(2) { 
+        display: flex;
+        width: 80%;
+    }
+
+    .emailBox{
+        display: flex;
+        white-space: nowrap;
+        position: absolute;
+        width: 90%;
+        height: 350px;
+        top: 10px;
+    }
+
+    .emailInput p{
+        position: absolute;
+        top: -30px;
+        left: -50px;
+        font-family: Integral CF;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 0%;
+    }
+
+    .emailInput input{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        padding-left: 53px;
+        box-sizing: border-box;
+        width: 74%;
+        height: 12%;
+        top: 160px;
+        left: 50px;
+        z-index: 1;
+    }
+
+    .emailIconC{
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 171px;
+        right: 275px;
+        z-index: 1000;
+    }
+
+    .emailButton button{
+        position: absolute;
+        width: 73%;
+        height: 12%;
+        top: 255px;
+        left: 50px;
+    }
+
+    .emailButton p{
+        position: absolute;
+        top: -67px;
+        left: 100px;
+        font-family: Integral CF;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 0%;
+    }
+
+    .emailTextBr{  
+        display: block;
+    }
+    
+    .emailText3{
+        position: absolute;
+        left: -150px;
+        top: 145px;
+    }
+
+    .footerAllDiv{
+        display: flex;
+        width: 100%;
+        background-color: #9c9c9c;
+    }
+
+    .footerContainer{
+        top: 100px;
+        position: relative;
+        background-color: #9c9c9c;
+    }
+
+    .footerSection{
+        position: absolute;
+        white-space: nowrap;
+        top: -740px;
+    }
+    
+    .ourText{
+        position: absolute;
+        top: 110px;
+        left: -20px;
+    }
+
+    #footerSec1{
+        position: absolute;
+        top: -500px;
+        white-space: nowrap;
+    }
+
+    #footerSec2{
+        position: absolute;
+        top: -500px;
+        left: 190px;
+    }
+
+    #footerSec3{
+        position: absolute;
+        top: -270px;
+    }
+
+    #footerSec4{
+        position: absolute;
+        top: -270px;
+        left: 190px;
+    }
+
+    #footerSec5{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 1080px;
+
+    }
+
+    #footerSec5 p {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 30px;
+    }
+
+    .paymentIcons{
+        display: flex;
+        position: absolute;
+        bottom: 80px;
+        right: 2px;
+    }
+    
+    
 }

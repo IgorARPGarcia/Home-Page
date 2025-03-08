@@ -17,6 +17,7 @@ subscribeButton.addEventListener("click", function () {
         alert("Por favor, insira um email válido! ❌");
     }
 });
+
 var reviews = [
     {
         name: "John Yu.",

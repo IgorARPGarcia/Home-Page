@@ -300,6 +300,309 @@ body{
   width: 40%;
 }
 
+.anotherMain{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 7vh;
+}
+
+.anotherMainContent{
+  display: flex;
+  width: 80%;
+  height: 2%;
+  gap: 15px;
+  color: #3b3b3b;
+}
+
+.aConfigTshirts{
+  color: black;
+  text-decoration-line: none;
+}
+
+.productDetails{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 56vh;
+}
+
+.productContent{
+  display: flex;
+  width: 80%;
+}
+
+.productImages{
+  display: flex;
+  justify-content: space-between;
+  width: 42%;
+}
+
+.oneLifeTitle{
+  margin-top: -5px;
+  font-family: Integral CF;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.productInfo{
+  display: flex;
+  justify-content: center;
+  width: 58%;
+}
+
+.starsConfig4{
+  margin-top: -20px;
+}
+
+.productDetailP1{
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #00000099;
+}
+
+.productDetailP2{
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #00000099;
+}
+
+.productInfoContent{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+}
+
+.productDetailP{
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #00000099;
+  margin-top: -10px;
+}
+
+.circleColorsDiv{
+  display: flex;
+  margin-bottom: 20px;
+  gap: 5px;
+  width: 20%;
+  height: 10%;
+}
+
+.buttonDiv{
+  margin-left: -15px;
+  display: flex;
+  margin-bottom: 20px;
+  width: 45%;
+  height: 10%;
+  gap: 10px;
+}
+
+.smallB{
+  cursor: pointer;
+  border: none;
+  width: 25%;
+  border-radius: 30px;
+  color: #3b3b3b;
+}
+
+.mediumB{
+  cursor: pointer;
+  border: none;
+  width: 25%;
+  border-radius: 30px;
+  color: #3b3b3b;
+}
+
+.largeB{
+  cursor: pointer;
+  border: none;
+  width: 25%;
+  border-radius: 30px;
+  color: #3b3b3b;
+}
+
+.xLargeB{
+  cursor: pointer;
+  border: none;
+  width: 25%;
+  border-radius: 30px;
+  color: #3b3b3b;
+}
+
+.finalButtons{
+  display: flex;
+  width: 50%;
+  height: 15%;
+  gap: 10px;
+}
+
+.quantityControl{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  width: 30%;
+  border-radius: 30px;
+  background-color: #F0F0F0;
+  border: none;
+  height: 60%;
+  margin-top: 20px;
+}
+
+.minusB{
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  height: 50%;
+  width: 20%;
+}
+
+.plusB{
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  height: 50%;
+  width: 20%;
+}
+
+.addCartB{
+  cursor: pointer;
+  width: 70%;
+  border-radius: 30px;
+  border: none;
+  height: 60%;
+  margin-top: 20px;
+  background-color: #000000;
+  color: white;
+}
+
+.brownCircle{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  width: 30%;
+  height: 100%;
+  background-color: #4F4631;
+}
+
+.greenCircle{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  width: 30%;
+  height: 100%;
+  background: #314F4A;
+}
+
+.purpleCircle{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  width: 30%;
+  height: 100%;
+  background: #31344F;
+
+}
+
+.smallImages{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  width: 22%;
+  height: 100%;
+  
+}
+
+.smallImages img{
+  border-radius: 24px;
+  border: 2px solid black;
+}
+
+.bigImageConfig{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.bigImageConfig img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.bigImage{
+  width: 100%;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.smallImgConfig{
+  display: flex;
+  width: 100%;
+  height: 33%;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sizeButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background-color: #F0F0F0;
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sizeButton.selected {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+}
+
+
 .miniText1{
   display: flex;
   flex-direction: column;

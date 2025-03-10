@@ -7,7 +7,7 @@ import mobileSearchIconImage from './images/mobileSearchIcon.png';
 import cartImage from './images/cart.png';
 import userImage from './images/user.png';
 
-function HeaderContent(){
+function HeaderContent({handleBackToMain}){
     return(
         <>
             <header>
@@ -19,7 +19,7 @@ function HeaderContent(){
                 <div class="mainHeader">
                     <div class="contentDiv">
                         <div class="menuHamburger"><img src="/images/hamburgerImage.png" alt=""/></div>
-                        <div class="h1Div"><p class="mainTitle">SHOP.CO</p></div>
+                        <div class="h1Div"><p class="mainTitle" onClick={handleBackToMain}>SHOP.CO</p></div>
                         <div class="navDiv">
                             <nav class="geralNavs" id="shopNav">
                                 Shop <img src={setaShopImage} alt=""/>

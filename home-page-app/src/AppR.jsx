@@ -18,7 +18,7 @@ function AppDesign() {
 
     return (
         <>
-            <HeaderContent />
+            <HeaderContent handleBackToMain={handleBackToMain}/>
             {showProductDetails ? (
                 <ProductDetails handleBackToMain={handleBackToMain} />
             ) : (
@@ -30,3 +30,4 @@ function AppDesign() {
 }
 
 export default AppDesign;
+

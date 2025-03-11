@@ -309,6 +309,7 @@ body{
 
 .anotherMainContent{
   display: flex;
+  align-items: center;
   width: 80%;
   height: 2%;
   gap: 15px;
@@ -538,7 +539,7 @@ body{
 
 .smallImages img{
   border-radius: 24px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .bigImageConfig{
@@ -928,6 +929,16 @@ body{
   font-weight: 500px;
 }
 
+.productImgConfig {
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productImgConfig:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .miniText1 span{
   font-family: Satoshi;
   font-weight: 400;
@@ -1162,6 +1173,7 @@ body{
 }
 
 .casualStyle{
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1170,9 +1182,16 @@ body{
   border-radius: 30px;
   width: 40%;
   height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover{    
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .formalStyle{
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1181,9 +1200,17 @@ body{
   border-radius: 30px;
   width: 60%;
   height: 100%;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover{    
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .partyStyle{
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1192,9 +1219,17 @@ body{
   border-radius: 30px;
   width: 60%;
   height: 100%;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover{    
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .gymStyle{
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1203,7 +1238,15 @@ body{
   border-radius: 30px;
   width: 40%;
   height: 100%;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover{    
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
 }
+
 
 .headerReviewsSec{
   display: flex;
@@ -1310,8 +1353,6 @@ body{
 .allReviews .boxReview:nth-child(4) {
   width: 100%;
 }
-
-
 
 .footerAllDiv{
   display: flex;
@@ -1535,6 +1576,318 @@ ul {
 
 .emailTextBr{
   display: none;
+}
+
+.categoriesSpace{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 160vh;
+}
+
+.categoriesContent{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 100%;
+}
+
+.filtersDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 80%;
+  border: 2px solid #F0F0F0;
+  border-radius: 30px;
+  margin-right: 30px;
+}
+
+.productsDivv{
+  width: 80%;
+  height: 100%;
+}
+
+.firstRow{
+  display: flex;
+  flex-direction: row;
+  gap: 154px;
+  height: 30%;
+  width: 100%;
+}
+
+.secondRow{
+  display: flex;
+  flex-direction: row;
+  gap: 154px;
+  height: 30%;
+  width: 100%;
+}
+
+.thirdRow{
+  display: flex;
+  flex-direction: row;
+  gap: 154px;
+  height: 30%;
+  width: 100%;
+}
+
+.miniHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  width: 100%;
+}
+
+.casualNormalP{
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.mostPopular{
+  font-family: Satoshi;
+  font-weight: 800;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.mostPopular img{
+  margin-left: 5px;
+}
+
+.casualH{
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.filtersContent{
+  width: 90%;
+  height: 98%;
+}
+
+.filtersTitle{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5%;
+  border-bottom: 2px solid #F0F0F0;
+}
+
+.filtersButton{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.filterH{
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.dressTypes{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+  border-bottom: 2px solid #F0F0F0;
+}
+
+.typesNames{
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.arrow{
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  leading-trim: Cap height;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.homeArrow{
+  margin-left: 5px;
+  margin-right: 5px;
+  position: absolute;
+  top: 131px;
+}
+
+.priceChoose{
+  cursor: pointer;
+}
+
+.priceDiv{
+  height: 11%;
+  border-bottom: 2px solid #F0F0F0;
+}
+
+.priceTitle{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.priceButton{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.priceH{
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.colorDiv{
+  height: 15%;
+  border-bottom: 2px solid #F0F0F0;
+}
+
+.colorTitle{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.colorButton{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.colorH{
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.colorChoose{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  height: 60%;
+}
+
+.greenCircle2{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #00C12B;
+}
+
+.redCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #F50606; 
+}
+
+.yellowCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #F5DD06;
+}
+
+.orangeCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #F57906;
+}
+
+.redCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #F50606;  
+}
+
+.blueLightCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #06CAF5;
+}
+
+.blueDarkCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #063AF5;
+}
+
+.purpleCircle2{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #7D06F5;
+}
+
+.pinkCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #F506A4;  
+}
+
+.whiteCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #FFFFFF;
+  border: 1px solid #f0f0f0; 
+}
+
+.blackCircle{
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: #000000;
 }
 
 @media(max-width: 412px){

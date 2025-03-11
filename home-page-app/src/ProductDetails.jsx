@@ -24,6 +24,7 @@ import poloTshirt from './images/poloTshirt.png';
 import gradientTshirt from './images/gradientTshirt.png';
 import poloTipping from './images/poloTipping.png';
 import blackTshirt from './images/blackTshirt.png'
+import rightArrow from './images/rightArrow.png';
 
 function ProductDetails({handleBackToMain}) {
 
@@ -64,10 +65,10 @@ function ProductDetails({handleBackToMain}) {
         <>
             <div className="anotherMain">
                 <div className="anotherMainContent">
-                    <a href="#" className="aConfig" onClick={handleBackToMain}>Home &gt;</a>
-                    <a href="#" className="aConfig">Shop &gt;</a>
-                    <a href="#" className="aConfig">Men &gt;</a>
-                    <a href="#" className="aConfig aConfigTshirts">T-shirts</a>
+                    <a href="#" className="aConfig" onClick={handleBackToMain}>Home <span className="homeArrow"><img src={rightArrow} alt="" /></span></a>
+                    <a href="#" className="aConfig" style={{marginLeft: 10}}>Shop <span className="homeArrow"><img src={rightArrow} alt="" /></span></a>
+                    <a href="#" className="aConfig" style={{marginLeft: 10}}>Men <span className="homeArrow"><img src={rightArrow} alt="" /></span></a>
+                    <a href="#" className="aConfig aConfigTshirts" style={{fontWeight: 800, marginLeft: 10}}>T-shirts</a>
                 </div>
             </div>
 

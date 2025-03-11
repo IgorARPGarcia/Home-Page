@@ -19,8 +19,9 @@ import fadedSJeansImage from './images/FadedSJeans.png';
 import fiveStar from './images/fiveStar.png';
 import leftArrow from './images/leftArrow.png';
 import rightArrow from './images/rightArrow.png';
+import fiveStarsP from './images/fiveStarsP.png';
 
-function MainContent({ handleProductClick }) {
+function MainContent({handleProductClick, handleCategorieClick}) {
 
     const reviewsRef = useRef(null);
 
@@ -81,25 +82,25 @@ function MainContent({ handleProductClick }) {
                         <div className="firstP" onClick={handleProductClick}>
                             <img className="productImgConfig" src={tshirtImage} alt=""/>
                             <p className="productTextConfig">T-SHIRT WITH TAPE DETAILS</p>
-                            <img src={fiveStar} alt="" />
+                            <img src={fiveStarsP} alt="" />
                             <p className="currentPrice">$120</p>
                         </div>
                         <div className="secondP">
                             <img className="productImgConfig" src={jeansImage} alt="" />
                             <p className="productTextConfig">SKINNY FIT JEANS</p>
-                            <img className="starsConfig" src={fiveStar} alt="" />
+                            <img className="starsConfig" src={fiveStarsP} alt="" />
                             <p className="currentPrice">$240<span className="price">$260</span><span className="discount">20%</span></p>
                         </div>
                         <div className="thirdP">
                             <img className="productImgConfig" src={cShirtImage} alt="" />
                             <p className="productTextConfig">CHECKERED SHIRT</p>
-                            <img src={fiveStar} alt="" />
+                            <img src={fiveStarsP} alt="" />
                             <p className="currentPrice">$180</p>
                         </div>
                         <div className="fourthP">
                             <img className="productImgConfig" src={strTshirtImage} alt="" />
                             <p className="productTextConfig">SLEEVE STRIPED T-SHIRT</p>
-                            <img src={fiveStar} alt="" />
+                            <img src={fiveStarsP} alt="" />
                             <p className="currentPrice">$130<span className="price">$160</span><span className="discount">30%</span></p>
                         </div>
                     </div>
@@ -118,25 +119,25 @@ function MainContent({ handleProductClick }) {
                         <div className="firstP">
                             <img className="productImgConfig" src={verticalShirtImage} alt="" />
                             <p className="productTextConfig">VERTICAL STRIPED SHIRT</p>
-                            <img className="pStars" src={fiveStar} alt="" />
+                            <img className="pStars" src={fiveStarsP} alt="" />
                             <p className="currentPrice">$212<span className="price">$232</span><span className="discount">20%</span></p>
                         </div>
                         <div className="secondP">
                             <img className="productImgConfig" src={courageTshirtImage} alt="" />
                             <p className="productTextConfig">COURAGE GRAPHIC T-SHIRT</p>
-                            <img className="pStars" src={fiveStar} alt="" />
+                            <img className="pStars" src={fiveStarsP} alt="" />
                             <p className="currentPrice">$145</p>
                         </div>
                         <div className="thirdP">
                             <img className="productImgConfig" src={looseFitBermudaImage} alt="" />
                             <p className="productTextConfig">LOOSE FIT BERMUDA SHORTS</p>
-                            <img className="pStars" src={fiveStar} alt="" />
+                            <img className="pStars" src={fiveStarsP} alt="" />
                             <p className="currentPrice">$80</p>
                         </div>
                         <div className="fourthP">
                             <img className="productImgConfig" src={fadedSJeansImage} alt="" />
                             <p className="productTextConfig">FADED SKINNY JEANS</p>
-                            <img className="pStars" src={fiveStar} alt="" />
+                            <img className="pStars" src={fiveStarsP} alt="" />
                             <p className="currentPrice">$210</p>
                         </div>
                     </div>
@@ -154,7 +155,7 @@ function MainContent({ handleProductClick }) {
                             <div className="gymStyleMobile"></div>
                         </div>
                         <div className="stylesImages1">
-                            <div className="casualStyle"></div>
+                            <div className="casualStyle" onClick={handleCategorieClick}></div>
                             <div className="formalStyle"></div>
                         </div>
                         <div className="stylesImages2">

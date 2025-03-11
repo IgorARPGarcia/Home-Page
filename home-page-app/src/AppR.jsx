@@ -1,33 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderContent from "./Header";
 import MainContent from "./Main";
 import FooterContent from "./Footer";
-import { useState } from "react";
 import ProductDetails from "./ProductDetails";
+import CategoriesPage from "./Categories";
 
 function AppDesign() {
-    const [showProductDetails, setShowProductDetails] = useState(false);
+    const [currentPage, setCurrentPage] = useState("main");
 
     const handleProductClick = () => {
-        setShowProductDetails(true);
+        setCurrentPage("productDetails");
+    };
+
+    const handleCategorieClick = () => {
+        setCurrentPage("categories");
     };
 
     const handleBackToMain = () => {
-        setShowProductDetails(false);
+        setCurrentPage("main");
     };
 
     return (
         <>
-            <HeaderContent handleBackToMain={handleBackToMain}/>
-            {showProductDetails ? (
-                <ProductDetails handleBackToMain={handleBackToMain} />
-            ) : (
-                <MainContent handleProductClick={handleProductClick} />
-            )}
+            <HeaderContent handleBackToMain={handleBackToMain} />
+            
+            {currentPage === "productDetails" && <ProductDetails handleBackToMain={handleBackToMain} />}
+            {currentPage === "categories" && <CategoriesPage handleBackToMain={handleBackToMain} />}
+            {currentPage === "main" && <MainContent handleProductClick={handleProductClick} handleCategorieClick={handleCategorieClick} />}
+
             <FooterContent />
         </>
     );
 }
 
 export default AppDesign;
-

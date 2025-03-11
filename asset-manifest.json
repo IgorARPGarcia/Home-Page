@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Home-Page/static/css/main.74edf5f6.css",
-    "main.js": "/Home-Page/static/js/main.931f5f5e.js",
+    "main.css": "/Home-Page/static/css/main.19e112c6.css",
+    "main.js": "/Home-Page/static/js/main.1d4d49e9.js",
     "static/js/453.39920c45.chunk.js": "/Home-Page/static/js/453.39920c45.chunk.js",
     "static/media/background.png": "/Home-Page/static/media/background.92097307b03cdda5cb6d.png",
     "static/media/backgroundMobile.png": "/Home-Page/static/media/backgroundMobile.0663d38585e50d2b48ff.png",
@@ -35,12 +35,12 @@
     "static/media/oneLifeFirstImg.png": "/Home-Page/static/media/oneLifeFirstImg.44dd539ceef42d09793a.png",
     "static/media/logo.svg": "/Home-Page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Home-Page/index.html",
-    "main.74edf5f6.css.map": "/Home-Page/static/css/main.74edf5f6.css.map",
-    "main.931f5f5e.js.map": "/Home-Page/static/js/main.931f5f5e.js.map",
+    "main.19e112c6.css.map": "/Home-Page/static/css/main.19e112c6.css.map",
+    "main.1d4d49e9.js.map": "/Home-Page/static/js/main.1d4d49e9.js.map",
     "453.39920c45.chunk.js.map": "/Home-Page/static/js/453.39920c45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74edf5f6.css",
-    "static/js/main.931f5f5e.js"
+    "static/css/main.19e112c6.css",
+    "static/js/main.1d4d49e9.js"
   ]
 }

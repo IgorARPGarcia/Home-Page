@@ -25,6 +25,7 @@ import gradientTshirt from './images/gradientTshirt.png';
 import poloTipping from './images/poloTipping.png';
 import blackTshirt from './images/blackTshirt.png'
 import rightArrow from './images/rightArrow.png';
+import rightArrow1 from './images/rightArrow1.png';
 
 function ProductDetails({handleBackToMain}) {
 
@@ -65,9 +66,9 @@ function ProductDetails({handleBackToMain}) {
         <>
             <div className="anotherMain">
                 <div className="anotherMainContent">
-                    <a href="#" className="aConfig" onClick={handleBackToMain}>Home <span className="homeArrow"><img src={rightArrow} alt="" /></span></a>
-                    <a href="#" className="aConfig" style={{marginLeft: 10}}>Shop <span className="homeArrow"><img src={rightArrow} alt="" /></span></a>
-                    <a href="#" className="aConfig" style={{marginLeft: 10}}>Men <span className="homeArrow"><img src={rightArrow} alt="" /></span></a>
+                    <a href="#" className="aConfig" onClick={handleBackToMain}>Home <span className="homeArrow"><img src={rightArrow1} alt="" /></span></a>
+                    <a href="#" className="aConfig" style={{marginLeft: 10}}>Shop <span className="homeArrow"><img src={rightArrow1} alt="" /></span></a>
+                    <a href="#" className="aConfig" style={{marginLeft: 10}}>Men <span className="homeArrow"><img src={rightArrow1} alt="" /></span></a>
                     <a href="#" className="aConfig aConfigTshirts" style={{fontWeight: 800, marginLeft: 10}}>T-shirts</a>
                 </div>
             </div>
@@ -134,19 +135,19 @@ function ProductDetails({handleBackToMain}) {
                             <img src={line} alt="Line" />
                             <p className="productDetailP2">Choose Size</p>
                             <div className="buttonDiv1">
-                                <button class="smallB"
+                                <button class="smallB" style={{display: "flex", justifyContent: "center", alignItems: "center"}}
                                     className={`sizeButton ${selectedSize === "Small" ? "selected" : ""}`} 
                                     onClick={() => handleSizeSelect("Small")}>Small
                                 </button>
-                                <button class="mediumB"
+                                <button class="mediumB" style={{display: "flex", justifyContent: "center", alignItems: "center"}}
                                     className={`sizeButton ${selectedSize === "Medium" ? "selected" : ""}`} 
                                     onClick={() => handleSizeSelect("Medium")}>Medium
                                 </button>
-                                <button class="largeB"
+                                <button class="largeB" style={{display: "flex", justifyContent: "center", alignItems: "center"}}
                                     className={`sizeButton ${selectedSize === "Large" ? "selected" : ""}`} 
                                     onClick={() => handleSizeSelect("Large")}>Large
                                 </button>
-                                <button class="xLargeB"
+                                <button class="xLargeB" style={{display: "flex", justifyContent: "center", alignItems: "center"}}
                                     className={`sizeButton ${selectedSize === "X-Large" ? "selected" : ""}`} 
                                     onClick={() => handleSizeSelect("X-Large")}>X-Large
                                 </button>

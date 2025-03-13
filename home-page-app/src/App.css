@@ -208,6 +208,8 @@ body{
 
 
 .geralNavs{
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
   font-family: Satoshi;
   font-size: 16px;
@@ -537,11 +539,6 @@ body{
   
 }
 
-.smallImages img{
-  border-radius: 24px;
-  border: 1px solid black;
-}
-
 .bigImageConfig{
   width: 100%;
   height: 100%;
@@ -585,6 +582,8 @@ body{
 }
 
 .sizeButton {
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   border: none;
   border-radius: 30px;
@@ -596,6 +595,8 @@ body{
 }
 
 .sizeButton.selected {
+  display: flex;
+  justify-content: center;
   background-color: black;
   color: white;
   cursor: pointer;
@@ -1120,6 +1121,7 @@ body{
 }
 
 .aConfig{
+  margin-left: 10px;
   color: inherit;
   text-decoration: none;
 }
@@ -1278,10 +1280,11 @@ body{
   cursor: pointer;
 }
 
-.rightArrow{
+.rightArrow{ 
   background-color: #ffffff;
   border: none;
   position: absolute;
+  top: 81px;
   right: 0px;
   cursor: pointer;
 }
@@ -1597,7 +1600,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 20%;
-  height: 80%;
+  height: 75%;
   border: 2px solid #F0F0F0;
   border-radius: 30px;
   margin-right: 30px;
@@ -1605,7 +1608,8 @@ ul {
 
 .productsDivv{
   width: 80%;
-  height: 100%;
+  height: 100%; 
+  border-bottom: 2px solid #F0F0F0;
 }
 
 .firstRow{
@@ -1684,6 +1688,13 @@ ul {
   border-bottom: 2px solid #F0F0F0;
 }
 
+.filtersTitle1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5%;
+}
+
 .filtersButton{
   border: none;
   background-color: white;
@@ -1705,6 +1716,13 @@ ul {
   width: 100%;
   height: 15%;
   border-bottom: 2px solid #F0F0F0;
+}
+
+.dressTypes1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
 }
 
 .typesNames{
@@ -1747,7 +1765,19 @@ ul {
   border-bottom: 2px solid #F0F0F0;
 }
 
+.sizeDiv{
+  height: 20%;
+  border-bottom: 2px solid #F0F0F0;
+  padding-bottom: 80px;
+}
+
 .priceTitle{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sizeTitle{
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -1759,6 +1789,12 @@ ul {
   cursor: pointer;
 }
 
+.sizeButton{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .priceH{
   font-family: Satoshi;
   font-weight: 700;
@@ -1766,6 +1802,182 @@ ul {
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
+}
+
+.sizeH{
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.sizeChoose{
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+  height: 100%;
+  gap: 5px;
+}
+
+.xxSmallB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.xSmallB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.smallB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.mediumB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.largeB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.xLargeB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.xxLargeB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.xxxLargeB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.xxxxLargeB1{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.applyBDiv{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5%;
+}
+
+.applyFilterB{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #000000;
+  height: 80%;
+  width: 100%;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
 }
 
 .colorDiv{
@@ -1802,6 +2014,9 @@ ul {
 }
 
 .greenCircle2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1810,6 +2025,9 @@ ul {
 }
 
 .redCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1818,6 +2036,9 @@ ul {
 }
 
 .yellowCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1826,6 +2047,9 @@ ul {
 }
 
 .orangeCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1834,6 +2058,9 @@ ul {
 }
 
 .redCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1842,6 +2069,9 @@ ul {
 }
 
 .blueLightCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1850,6 +2080,9 @@ ul {
 }
 
 .blueDarkCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1858,6 +2091,9 @@ ul {
 }
 
 .purpleCircle2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1866,6 +2102,9 @@ ul {
 }
 
 .pinkCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -1874,20 +2113,229 @@ ul {
 }
 
 .whiteCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
   border-radius: 100px;
-  background: #FFFFFF;
-  border: 1px solid #f0f0f0; 
+  background: #F0F0F0;
+  border: 1px solid #929292; 
+}
+
+.whiteCircle{
+  color:#000000;
 }
 
 .blackCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   width: 45px;
   height: 45px;
   border-radius: 100px;
   background: #000000;
+}
+
+.pagesBDiv{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5vh;
+  margin-top: 30px;
+}
+
+.auxDiv{
+  display: flex;
+  justify-content: right;
+  width: 80%;
+}
+
+.pagesBContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+}
+
+.previousB{
+  height: 100%;
+}
+
+.previousButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagesNumberDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  height: 100%;
+  width: 30%;
+}
+
+.nextB{
+  height: 100%;
+}
+
+.nextButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  height: 100%;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  height: 100%;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  height: 100%;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.buttonDots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  height: 100%;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button8{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  height: 100%;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button9{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  height: 100%;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button10{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  height: 100%;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
 }
 
 @media(max-width: 412px){

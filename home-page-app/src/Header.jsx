@@ -22,15 +22,9 @@ function HeaderContent({handleBackToMain}){
                         <div class="h1Div"><p class="mainTitle" onClick={handleBackToMain}>SHOP.CO</p></div>
                         <div class="navDiv">
                             <nav class="geralNavs" id="shopNav">
-                                Shop <img src={setaShopImage} alt=""/>
-                            </nav>
-                            <nav class="geralNavs" id="onSaleNav">
-                                On Sale
-                            </nav>
-                            <nav class="geralNavs">
+                                <a href="" className="aConfig">Shop <img src={setaShopImage} alt=""/></a> 
+                                <a href="" className="aConfig">On Sale</a>
                                 <a class="aConfig" href="#newArrivals">New Arrivals</a>
-                            </nav>
-                            <nav class="geralNavs">
                                 <a class="aConfig" href="#brandsSec">Brands</a>
                             </nav>
                         </div>

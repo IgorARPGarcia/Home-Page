@@ -683,6 +683,14 @@ body{
   height: 100%;
 }
 
+.reviewsDiv1{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 15px;
+  width: 80%;
+  height: 100%;
+}
+
 .samanthaR{
   display: flex;
   justify-content: center;
@@ -1029,6 +1037,13 @@ body{
   gap: 15px;
 }
 
+.someProducts1{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
 .productTextConfig{
   display: flex;
   font-family: Satoshi;
@@ -1059,7 +1074,32 @@ body{
   color:#00000066;
 }
 
+.price1{
+  margin-inline-start: 13px;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.4px;
+  letter-spacing: 0%;
+  text-decoration: line-through;
+  color:#00000066;
+}
+
 .discount {
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16.2px;
+  letter-spacing: 0%;
+  margin-inline-start: 13px;
+  background-color: #FF33331A;
+  color: #FF3333;
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 30px;
+}
+
+.discount1 {
   font-family: Satoshi;
   font-weight: 500;
   font-size: 12px;
@@ -2338,6 +2378,10 @@ ul {
   cursor: pointer;
 }
 
+.youMightBr{
+  display: none;
+}
+
 @media(max-width: 412px){
 
   .divBlackHeader{
@@ -2913,6 +2957,11 @@ ul {
       left: 390px;
   }
 
+  .rightArrow{
+    position: absolute;
+    top: 4px;
+  }
+
   .allReviews{
       display: flex;
       justify-content: center;
@@ -3070,6 +3119,192 @@ ul {
       bottom: 80px;
       right: 2px;
   }
+
+  .ethanR{
+    display: none;
+  }
+
+  .avaR{
+    display: none;
+  }
+
+  .oliviaR{
+    display: none;
+  }
+
+  .newArrivalsSec1{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -2070px;
+    left: 30px;
+    white-space: nowrap;
+  }
+
+  .someProducts1{
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    gap: 15px;
+    top: 3000px;
+  }
+
+  .reviewsDiv1{
+    position: absolute;
+    top: 1700px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    height: 100%;
+  }
+
+  .reviewsHeaderDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 1600px;
+  }
+
+  .headerButtons{
+    display: flex;
+  }
+
+  .filterB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    height: 70%;
+    position: absolute;
+    left: 215px;
+  }
+
+  .latestB{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 70%;
+    position: absolute;
+  }
+
+  .writeB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 70%;
+    position: absolute;
+    left: 270px;
+  }
+
+  .optionsDiv{
+    position: absolute;
+    top: 1500px;
+  }
+
+  .productInfo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 920px;
+    left: 1px;
+    width: 100%;
+  }
+
+  .productInfoContent{
+    width: 80%;
+  }
+
+  .price1{
+    margin-inline-start: 13px;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.4px;
+    letter-spacing: 0%;
+    text-decoration: line-through;
+    color:#00000066;
+  }
+
+  .discount1{
+    font-family: Satoshi;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16.2px;
+    letter-spacing: 0%;
+    margin-inline-start: 13px;
+    background-color: #FF33331A;
+    color: #FF3333;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 30px;   
+  }
+
+  .circleColorsDiv{
+    display: flex;
+  }
+
+  .smallImages{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 580px;
+  }
+
+  .bigImage{
+    width: 100%;
+    height: 100%;
+  }
+
+  .bigImageConfig{
+    position: absolute;
+    left: 41px;
+    width: 80%;
+    height: 39%;
+  }
+
+  .finalButtons{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .quantityControl{
+    height: 40px;
+  }
+
+  .addCartB{
+    height: 40px;
+  }
+
+  .modal{
+    position: absolute;
+    left: 200px;
+    top: 1200px;
+  }
+
+  .youMightBr{
+    display: flex;
+  }
+
+  .productImages{
+    height: 70%;
+    width: 100%;
+    background-color: #F0F0F0;
+  }
   
+  .productContent{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .smallImages{
+
+  }
   
 }

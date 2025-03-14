@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState } from 'react';
 import emailIcon from './images/emailIcon.png';
 import twitterIcon from './images/twitterIcon.png';
 import facebookIcon from './images/facebookIcon.png';
@@ -12,29 +12,27 @@ import googlePayIcon from './images/Google.png';
 
 function FooterContent(){
 
-    useEffect(() => {
-        var emailInput = document.querySelector(".inputConfig");
-        var subscribeButton = document.querySelector(".buttonConfig");
-        var emailData = [];
+    const [emailData, setEmailData] = useState<{ email: string }[]>([]);
 
-        function isValidEmail(email) {
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
+    const isValidEmail = (email: string): boolean => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
 
-        subscribeButton.addEventListener("click", function () {
-            var email = emailInput.value.trim();
+    const handleClick = () => {
+        const emailInput = document.querySelector<HTMLInputElement>(".inputConfig");
+        if (emailInput) {
+            const email = emailInput.value.trim();
             if (isValidEmail(email)) {
-                emailData.push({ email: email });
-                console.log("Email válido adicionado:", emailData);
+                setEmailData((prevData) => [...prevData, { email }]);
+                console.log("Email válido adicionado:", [...emailData, { email }]);
                 emailInput.value = "";
                 alert("Email cadastrado com sucesso! ✅");
-            }
-            else {
+            } else {
                 alert("Por favor, insira um email válido! ❌");
             }
-        });
-    });
+        }
+    };
 
     return(
         <>
@@ -48,7 +46,7 @@ function FooterContent(){
                         </div>
                         <div className="emailButton">
                             <p className="textConfig2"><span className="ourText">OUR</span> <br className="emailTextBr"/> <span className="emailText3">LATEST OFFERS</span></p>
-                            <button className="buttonConfig">Subscribe to Newsletter</button>
+                            <button className="buttonConfig" onClick={handleClick}>Subscribe to Newsletter</button>
                         </div>
                     </div>
                     <div className="footerContainer">

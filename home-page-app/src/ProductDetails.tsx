@@ -27,35 +27,35 @@ import blackTshirt from './images/blackTshirt.png'
 import rightArrow from './images/rightArrow.png';
 import rightArrow1 from './images/rightArrow1.png';
 
-function ProductDetails({handleBackToMain}) {
+interface ProductDetailsProps {
+    handleBackToMain: () => void;
+}
 
-    const [selectedImage, setSelectedImage] = useState(oneLifeBigImg);
+const ProductDetails: React.FC<ProductDetailsProps> = ({handleBackToMain}) => {
 
-    const [selectedColor, setSelectedColor] = useState('brown');
+    const [selectedImage, setSelectedImage] = useState<string>(oneLifeBigImg);
+    const [selectedColor, setSelectedColor] = useState<string>('brown');
+    const [showModal, setShowModal] = useState<boolean>(false);
+    const [quantity, setQuantity] = useState<number>(1); 
+    const [selectedSize, setSelectedSize] = useState<string | null>(null); 
 
-    const [showModal, setShowModal] = useState(false);
-
-    const [quantity, setQuantity] = useState(1);
-
-    const [selectedSize, setSelectedSize] = useState(null);
-
-    const handleColorClick = (color) => {
+    const handleColorClick = (color: string): void => {
         setSelectedColor(color);
-    }
+    };
 
-    const handleSizeSelect = (size) => {
+    const handleSizeSelect = (size: string): void => {
         setSelectedSize(size);
     };    
 
-    const decreaseQuantity = () => {
+    const decreaseQuantity = (): void => {
         if (quantity > 1) setQuantity(quantity - 1);
     };
 
-    const increaseQuantity = () => {
+    const increaseQuantity = (): void => {
         setQuantity(quantity + 1);
     };
 
-    const handleAddToCart = () => {
+    const handleAddToCart = (): void => {
         setShowModal(true);
         setTimeout(() => {
             setShowModal(false);
@@ -99,13 +99,13 @@ function ProductDetails({handleBackToMain}) {
                             <p className='oneLifeTitle'>One Life Graphic T-shirt</p>
                             <img className="starsConfig4" width={180} height={24} src={oneLifeStars} alt="Stars" />
                             <p className="currentPrice">
-                                $260<span className="price">$300</span><span className="discount">-40%</span>
+                                $260<span className="price1">$300</span><span className="discount1">-40%</span>
                             </p>
                             <p className="productDetailP">
                                 This graphic t-shirt which is perfect for any occasion. Crafted from a soft and 
                                 breathable fabric, it offers superior comfort and style.
                             </p>
-                            <img src={line} alt="Line" />
+                            <img className="pDLine" src={line} alt="Line" />
                             <p className="productDetailP1">Select Colors</p>
                             <div className="circleColorsDiv">
                                 <div
@@ -195,7 +195,7 @@ function ProductDetails({handleBackToMain}) {
                 </div>
             </div>
             <div className="reviewsSpace">
-                <div className="reviewsDiv">
+                <div className="reviewsDiv1">
                     <div className="samanthaR">
                         <div className="reviewContent">
                             <div className="stars"><img src={fourhalfStar} alt="" /> <span className="samanthaSpan">...</span></div>
@@ -261,10 +261,10 @@ function ProductDetails({handleBackToMain}) {
             <div className="loadMoreDiv">
                 <button className="loadMoreB">Load More Reviews</button>
             </div>
-            <div className="newArrivalsSec" id="newArrivals">
-                        <p className="newArrTitle">YOU MIGHT ALSO LIKE</p>
+                    <div className="newArrivalsSec1" id="newArrivals">
+                        <p className="newArrTitle">YOU MIGHT <br className="youMightBr"/>ALSO LIKE</p>
                     </div>
-                    <div className="someProducts">
+                    <div className="someProducts1">
                         <div className="firstP">
                             <img className="productImgConfig" src={poloTshirt} alt=""/>
                             <p className="productTextConfig">POLO WITH CONTRAST TRIMS</p>

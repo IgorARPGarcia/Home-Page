@@ -41,35 +41,40 @@ import oneLifeThirdImg from './images/oneLifeThirdImg.png';
 import oneLifeBigImg from './images/oneLifeBigImage.png';
 import oneLifeStars from './images/oneLifeStars.png';
 
-
-function CategoriesPage({handleBackToMain}){
-
-    const [selectedColor, setSelectedColor] = useState('#00C12B');
-
-    const handleColorClick = (color) => {
-        setSelectedColor(color);
+    interface CategoriesPageProps {
+        handleBackToMain: () => void;
+        handleProductClick: (num: number) => void; 
     }
+  
+    const CategoriesPage: React.FC<CategoriesPageProps> = ({ handleBackToMain, handleProductClick }) =>{
 
-    const [selectedSize, setSelectedSize] = useState(null);
-
-    const handleSizeSelect = (size) => {
-        setSelectedSize(size);
-    };   
-
-    const [currentPage, setCurrentPage] = useState(1);
-    const totalPages = 2;
-
-    const handleNext = () => {
-        if (currentPage < totalPages) {
-        setCurrentPage(currentPage + 1);
-        }
-    };
-
-    const handlePrevious = () => {
-        if (currentPage > 1) {
-        setCurrentPage(currentPage - 1);
-        }
-    };
+    const [selectedColor, setSelectedColor] = useState<string>('#00C12B');
+    
+        const handleColorClick = (color: string): void => {
+            setSelectedColor(color);
+        };
+    
+        const [selectedSize, setSelectedSize] = useState<string | null>(null);
+    
+        const handleSizeSelect = (size: string): void => {
+            setSelectedSize(size);
+        };
+    
+        const [currentPage, setCurrentPage] = useState<number>(1);
+        const totalPages = 2;
+    
+        const handleNext = (): void => {
+            if (currentPage < totalPages) {
+                setCurrentPage(currentPage + 1);
+            }
+        };
+    
+        const handlePrevious = (): void => {
+            if (currentPage > 1) {
+                setCurrentPage(currentPage - 1);
+            }
+        };
+        
 
     return(
         <>
@@ -227,10 +232,10 @@ function CategoriesPage({handleBackToMain}){
                                 <p className="currentPrice">{currentPage === 1 ? '$180' : '$145'}</p>
                             </div>
                             <div className="fourthP">
-                                <img className="productImgConfig" src={currentPage === 1 ? blackTshirt : cShirtImage} alt="" />
-                                <p className="productTextConfig">{currentPage === 1 ? "BLACK STRIPED T-SHIRT" : "CHECKERED SHIRT"}</p>
-                                <img className="starsConfig" src={currentPage === 1 ? fiveStarsP : fiveStarsP} alt="" />
-                                <p className="currentPrice">{currentPage === 1 ? '$120' : '$180 '}<span className="price">{currentPage === 1 ? "$150" : ""}</span><span className="discount">{currentPage === 1 ? "-30%" : "-0%"}</span></p>
+                                <img className="productImgConfig" width={300} height={300} src={currentPage === 1 ? blackTshirt : oneLifeBigImg} alt="" onClick={handleProductClick} />
+                                <p className="productTextConfig">{currentPage === 1 ? "BLACK STRIPED T-SHIRT" : "ONE LIFE GRAPHIC T-SHIRT"}</p>
+                                <img className="starsConfig" src={currentPage === 1 ? fiveStarsP : fourHalfStarsP} alt="" />
+                                <p className="currentPrice">{currentPage === 1 ? '$120' : '$260 '}<span className="price">{currentPage === 1 ? "$150" : "$300"}</span><span className="discount">{currentPage === 1 ? "-30%" : "-40%"}</span></p>
                             </div>
                         </div>
                         <div className="secondRow">

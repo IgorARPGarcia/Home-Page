@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",  
-    "rootDir": "./src",  
-    "module": "CommonJS",
-    "target": "ES6",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "module": "es2015",  
+    "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "noEmit": true,
     "strict": true
   }
 }

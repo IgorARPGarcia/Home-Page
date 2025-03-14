@@ -21,19 +21,28 @@ import leftArrow from './images/leftArrow.png';
 import rightArrow from './images/rightArrow.png';
 import fiveStarsP from './images/fiveStarsP.png';
 
-function MainContent({handleProductClick, handleCategorieClick}) {
+interface MainContentProps{
+    handleProductClick: () => void;
+    handleCategorieClick: (num: any) => void; 
+}
 
-    const reviewsRef = useRef(null);
+const MainContent : React.FC<MainContentProps> = ({handleProductClick, handleCategorieClick}) => {
 
-    const rotateReviews = (direction) => {
+    const reviewsRef = useRef<HTMLDivElement | null>(null);
+
+    const rotateReviews = (direction: 'left' | 'right') => {
         if (reviewsRef.current) {
-            if (direction === 'left') {
-                const firstReview = reviewsRef.current.firstElementChild;
-                reviewsRef.current.appendChild(firstReview);
-            } else {
-                const lastReview = reviewsRef.current.lastElementChild;
-                reviewsRef.current.insertBefore(lastReview, reviewsRef.current.firstElementChild);
+        if (direction === 'left') {
+            const firstReview = reviewsRef.current.firstElementChild;
+            if (firstReview) {
+            reviewsRef.current.appendChild(firstReview);
             }
+        } else {
+            const lastReview = reviewsRef.current.lastElementChild;
+            if (lastReview) {
+            reviewsRef.current.insertBefore(lastReview, reviewsRef.current.firstElementChild);
+            }
+        }
         }
     };
 

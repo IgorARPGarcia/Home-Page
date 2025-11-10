@@ -1,4 +1,4 @@
-<div>
+<div align=center>
   <h2>Home Page de um e-commerce de roupas utilizando React</h2>
   <p>
     Desenvolvi uma aplicação web utilizando React.js e TypeScript, focada em criar uma interface dinâmica e
@@ -9,9 +9,11 @@
 </div>
 
 <div align=center>
+  <h2>Página</h2>
   <img src="./siteGif.gif"/>
 </div>
 
 <div align=center>
+  <h2>Link da Página</h2>
   <h1>Clique <a href="https://igorarpgarcia.github.io/Home-Page/">aqui</a> para visitar a página</h1>
 </div>

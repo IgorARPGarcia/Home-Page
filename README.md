@@ -1,4 +1,4 @@
-<img src="./siteGif.gif"/>
+<img align=center src="./siteGif.gif"/>
 
 <div align=center>
   <h1>Clique <a href="https://igorarpgarcia.github.io/Home-Page/">aqui</a> para visitar a página</h1>
